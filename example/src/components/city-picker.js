@@ -38,7 +38,6 @@ const styles = StyleSheet.create({
     left: 20,
     width: 150,
     color: 'white',
-
   },
   pickerItem: {
     color: 'white',

@@ -53,16 +53,16 @@ class BackgroundImage extends Component {
     const { currentImage, oldImage } = this.state
 
     return (
-      <View style={styles.absolute}>
+      <View style={styles.fullScreen}>
         <Image
           source={oldImage}
-          style={styles.absolute}
+          style={styles.fullScreen}
         />
         <Animated.Image
           source={currentImage}
           onLoad={() => this.handleImageLoad()}
           style={[
-            styles.absolute,
+            styles.fullScreen,
             { opacity: this.state.opacity }
           ]}
         />
@@ -72,7 +72,7 @@ class BackgroundImage extends Component {
 }
 
 const styles = StyleSheet.create({
-  absolute: {
+  fullScreen: {
     position: 'absolute',
     top: 0,
     bottom: 0,
