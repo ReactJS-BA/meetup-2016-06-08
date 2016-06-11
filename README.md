@@ -10,3 +10,7 @@ Pueden sumarse haciendo click [aquí](http://slack.underscope.io).
 Hay un canal exclusivo de **React Native** para cualquier consulta o duda que haya quedado, o compartir lo que quieran sobre ese tópico.
 
 [![Slack Status](http://slack.underscope.io/badge.svg)](http://slack.underscope.io)
+
+#### Video
+
+React Native @ Globant - 6 de Junio de 2016 - https://www.youtube.com/watch?v=8mWKht_Xw_c
