@@ -11,7 +11,7 @@ React Native tiene una detallada guía paso a paso que es muy útil para empezar
 **_Como consejo, empezá instalando sólo los [Pre-requisitos requeridos](https://facebook.github.io/react-native/docs/getting-started.html#required-prerequisites)_** para tu primer proyecto. Una vez que eso esté funcionando podés seguir con las _**[Instalaciones recomendadas](https://facebook.github.io/react-native/docs/getting-started.html#highly-recommended-installs)**_.
 
 ## Demo
-### Paso 1 - Init
+### Paso 1 - Iniciando
 Asumiendo que ya instalaste todo lo mencionado antes, desde tu terminal corré
 ```
 react-native init MeetupBA
@@ -21,7 +21,7 @@ Este comando genera la estructura de carpetas del proyecto dentro de la carpeta 
 > **Nota:** dentro del proyecto vas a ver una carpeta para el proyecto de **Android** y otra para el de **iOS**.
 Ambos son proyectos **nativos** que podes importar y construir desde el Android Studio y XCode respectivamente.
 
-### Paso 2 - Run
+### Paso 2 - Ejecutando
 Una vez que se haya creado correctamente, en tu terminal deberías ver algo parecido a la imagen de abajo. Seguí las instrucciones para correr el proyecto.
 
 ![Post Init](./doc-images/post-init.png)
@@ -31,10 +31,10 @@ Lo que el comando `react-native run-ios` (o `run-android`) hace son tres cosas:
 - Construye el proyecto nativo creando una aplicación instalable
 - Instala esa app en tu dispositivo/emulador
 
-La primera vez que corras este comando va a llevar mucho más tiempo que las siguientes corridas.
+Tené en cuenta que la primera vez que corras este comando va a llevar mucho más tiempo que las siguientes corridas.
 
 
-### Paso 3 - Code
+### Paso 3 - Codeando
 Ahora que sabemos que el proyecto funciona podemos empezar a codear.
 
 [Habilitá Live Reload](#habilita-live-reload) y editá el archivo `index.ios.js` (o `index.android.js` para Android) para ver como la aplicación se recarga automáticamente.
