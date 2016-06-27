@@ -1,86 +1,87 @@
-# React Native - First project
+# React Native - Primer proyecto
 
-[React Native](https://facebook.github.io/react-native) is a framework for building native mobile apps using [React](https://facebook.github.io/react)
+[React Native](https://facebook.github.io/react-native) es un framework para hacer aplicaciones móviles nativas usando [React](https://facebook.github.io/react)
 
-## Prerequisites
-As React Native builds truly native apps, you will need to install the SDKs and Tools required by each environment (iOS/Android) you want to use.
+## Pre-requisitos
+Como con React Native se construyen aplicaciones **realmente nativas**, es necesario tener instaladas todas las herramientas y SDKs requeridas por cada entorno que quieras usar, tanto para Android como para iOS.
 
-**Don't worry!**
-React Native docs have a detailed step-by-step guide you can follow to get started.
+**No te preocupes!**
+React Native tiene una detallada guía paso a paso que es muy útil para empezar.
 
-**_Start with the [Required Prerequisites](https://facebook.github.io/react-native/docs/getting-started.html#required-prerequisites)_** for your very first project and once you got it running then go for the _**[Recommended Installs](https://facebook.github.io/react-native/docs/getting-started.html#highly-recommended-installs)**_.
+**_Como consejo, empezá instalando sólo los [Pre-requisitos requeridos](https://facebook.github.io/react-native/docs/getting-started.html#required-prerequisites)_** para tu primer proyecto. Una vez que eso esté funcionando podés seguir con las _**[Instalaciones recomendadas](https://facebook.github.io/react-native/docs/getting-started.html#highly-recommended-installs)**_.
 
 ## Demo
-### Step 1 - Init
-Assuming you followed the above mentioned steps, run from your terminal
+### Paso 1 - Init
+Asumiendo que ya instalaste todo lo mencionado antes, desde tu terminal corré
 ```
 react-native init MeetupBA
 ```
-This command generates the project folder structure inside **MeetupBA** folder and installs **react** and **react-native** as project dependencies from npm.
+Este comando genera la estructura de carpetas del proyecto dentro de la carpeta **MeetupBA** e instala **react** y **react-native** como dependencias del proyecto desde npm.
 
-> **Hint:** see the folder structure and will notice one folder for the **Android** project and another for the **iOS** project.
-Both are functional projects that can be imported and built from Android Studio and XCode.
+> **Nota:** dentro del proyecto vas a ver una carpeta para el proyecto de **Android** y otra para el de **iOS**.
+Ambos son proyectos **nativos** que podes importar y construir desde el Android Studio y XCode respectivamente.
 
-### Step 2 - Run
-Once successfully created, you should see this in your terminal. Just follow the instructions to run the project.
+### Paso 2 - Run
+Una vez que se haya creado correctamente, en tu terminal deberías ver algo parecido a la imagen de abajo. Seguí las instrucciones para correr el proyecto.
 
 ![Post Init](./doc-images/post-init.png)
 
-What `react-native run-ios` (or `run-android`) command does are three things:
-- Launches in a new terminal a **packager** that will bundle all the JS files and serve that bundle to the app
-- Builds the native project into an installable app
-- Installs that app in your device/emulator
+Lo que el comando `react-native run-ios` (o `run-android`) hace son tres cosas:
+- Lanza en una nueva terminal un **packager** que se va a encargar de _empaquetar_ todos los archivos JS y servir ese _paquete_ a la aplicación
+- Construye el proyecto nativo creando una aplicación instalable
+- Instala esa app en tu dispositivo/emulador
 
-Notice that the first time you build the app it will take much more time than subsequents builds.
+La primera vez que corras este comando va a llevar mucho más tiempo que las siguientes corridas.
 
-### Step 3 - Code
-Now we now the project is working we can start coding.
-[Enable Live Reload](#enabling-live-reload) and then edit the file `index.ios.js` (or `index.android.js` for Android) to see how the app is reloaded automatically.
 
-### Step 4 - Using an existing project
-You already know how to create, build, install and edit a React Native project from scratch.
-Now you should try cloning and running an existing project.
+### Paso 3 - Code
+Ahora que sabemos que el proyecto funciona podemos empezar a codear.
 
-First clone this repo which has a simple example app
+[Habilitá Live Reload](#habilita-live-reload) y editá el archivo `index.ios.js` (o `index.android.js` para Android) para ver como la aplicación se recarga automáticamente.
+
+### Paso 4 - Importando un proyecto que ya existe
+Ya sabemos como crear, construir, instalar y editar un proyecto React Native desde cero.
+Ahora deberías intentar clonando y corriendo un proyecto existente.
+
+Primero clona este repo que tiene una app de ejemplo
 ```
 git clone git@github.com:ReactJS-BA/meetup-2016-06-08.git MeetupReact
 ```
 
-Then move to the project folder and install the project dependencies
+Después movete a la carpeta del proyecto e instalá las dependencias del proyecto
 ```
 cd MeetupReact/example
 npm install
 ```
 
-Now run the app
+Ahora corré la app
 ```
 react-native run-ios
 # or for Android
 react-native run-android
 ```
 
-## Notes
-#### Enabling Live Reload
-1. Access to the **_Dev menu_**
-  - On iOS press **⌘+D**
-  - On Android device shake it or press the menu button
-  - On Android simulator press **F2** or **Page Up**
-  - On Genymotion press **⌘+M**
-2. Then select **_Enable Live Reload_** option
+## Notas
+#### Habilita Live Reload
+1. Accedé al **_Dev menu_**
+  - En iOS presioná **⌘+D**
+  - En un dispositivo Android agitalo o presioná el botón de menú
+  - En un simulador Android presioná **F2** o **Page Up**
+  - En Genymotion presioná **⌘+M**
+2. Luego seleccioná la opción **_Enable Live Reload_**
 
-#### What React Native differs from React?
-React Native **uses** React
-- **Target**: Obviously, the target is mobile and not web. This way the result is an installable mobile app and not a web app.
-- **Rendering**: React Native render its own components instead of html elements (`<View>`, `<Text>`, `<Image>` instead of `<div>`, `<span>`, `<img>`)
-- **Bundling**: React Native bundles the JS code using its own [**Packager**](#packager). You don't need to use any external tool like grunt, gulp, webpack or browserify.
-- **Multi-platform**: Thanks to the packager React Native allows to have different files for each platform but sharing the rest of the codebase.
-
+#### En qué se diferencia React Native de React?
+React Native **usa** React
+- **Uso**: Obviamente, React Native se usa para hacer aplicaciones nativas, no web, y por lo tanto el resultado es una app móvil instalable, no una aplicación web.
+- **Rendering**: React Native renderea sus propios componentes en vez de elementos html (`<View>`, `<Text>`, `<Image>` en lugar de `<div>`, `<span>`, `<img>`)
+- **Empaquetado**: React Native se encarga de empaquetar el código JS usando su propio [**Packager**](#packager). No hace falta usar ninguna herramienta externa como grunt, gulp, webpack o browserify.
+- **Multi platforma**: Gracias al packager, React Native permite tener diferentes archivos para cada plataforma y al mismo tiempo compartir el resto del código. (Más info en [**Packager**](#packager))
 
 #### Packager
-React Native has a Packager that bundles and serves the JS code depending on the following variables
-- `platform`: it will bundle only the **.ios.js** or **.android.js** files depending on this parameter
-- `dev`: if true will show the warning and error messages
-- `hot`: must be true to support Hot Reloading
-- `minify`: if true the code will be minified
+React Native tiene un Packager que empaqueta y sirve el código JS dependiendo de las siguientes variables
+- `platform`: dependiendo de este parámetro va a empaquetar los archivos **.ios.js** o **.android.js** (junto con los **.js** compartidos)
+- `dev`: si es **true** va a mostrar los mensajes de error y advertencia
+- `hot`: debe ser **true** para soportar Hot Reloading
+- `minify`: si es **true** el código va a ser minificado
 
-The best part is React Native apps take advantage of the Packager enabling features like **Live Reload** and **Hot Reloading**.
+Las apps hechas con React Native aprovechan al Packager para brindar funcionalidades como **Live Reload** y **Hot Reloading**.
