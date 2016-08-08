@@ -4,12 +4,10 @@ En este Meetup contamos la experiencia de los chicos de [Underscope](http://unde
 
 Pueden encontrar la presentación [aquí](http://slides.com/vcalvello/our-path-to-react-native/fullscreen) y en la carpeta [example](/example) una guía paso a paso para correr la misma aplicación que se vió en la charla.
 
-#### Slack de Underscope
+#### Slack de Meetup.js
 
-Pueden sumarse haciendo click [aquí](http://slack.underscope.io).
-Hay un canal exclusivo de **React Native** para cualquier consulta o duda que haya quedado, o compartir lo que quieran sobre ese tópico.
-
-[![Slack Status](http://slack.underscope.io/badge.svg)](http://slack.underscope.io)
+Pueden sumarse haciendo click [aquí](http://meetupjs.slack.com).
+Hay un canal exclusivo de **#react-native** para cualquier consulta o duda que haya quedado, o compartir lo que quieran sobre ese tópico.
 
 #### Video
 
